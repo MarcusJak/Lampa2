@@ -19,6 +19,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="på"
+=======
+        android:text="På"
+>>>>>>> c00ae209907e005f825064242a8a300024e9accd
         tools:layout_editor_absoluteX="63dp"
         tools:layout_editor_absoluteY="367dp" />
 
@@ -27,6 +30,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="av"
+=======
+        android:text="Av"
+>>>>>>> c00ae209907e005f825064242a8a300024e9accd
         tools:layout_editor_absoluteX="254dp"
         tools:layout_editor_absoluteY="365dp" />
 
