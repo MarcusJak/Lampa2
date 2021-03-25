@@ -10,7 +10,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="På"
         tools:layout_editor_absoluteX="63dp"
         tools:layout_editor_absoluteY="367dp" />
 
@@ -18,7 +18,7 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Av"
         tools:layout_editor_absoluteX="254dp"
         tools:layout_editor_absoluteY="365dp" />
 
@@ -26,7 +26,7 @@
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="UV"
         tools:layout_editor_absoluteX="63dp"
         tools:layout_editor_absoluteY="544dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
