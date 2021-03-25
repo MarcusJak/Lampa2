@@ -39,24 +39,47 @@
         tools:layout_editor_absoluteY="544dp" />
 
     <SeekBar
-        android:id="@+id/redbar"
+        android:id="@+id/redBar"
         android:layout_width="145dp"
         android:layout_height="60dp"
-        tools:layout_editor_absoluteX="220dp"
-        tools:layout_editor_absoluteY="505dp" />
+        android:max="255"
+        android:min="0"
+        android:progress="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.676" />
 
     <SeekBar
-        android:id="@+id/bluebar"
+        android:id="@+id/blueBar"
         android:layout_width="145dp"
         android:layout_height="60dp"
-        tools:layout_editor_absoluteX="220dp"
-        tools:layout_editor_absoluteY="530dp" />
+        android:layout_marginTop="556dp"
+        android:max="255"
+        android:min="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <SeekBar
         android:id="@+id/greenbar"
         android:layout_width="145dp"
         android:layout_height="60dp"
-        tools:layout_editor_absoluteX="220dp"
-        tools:layout_editor_absoluteY="555dp" />
+        android:max="255"
+        android:min="0"
+        android:progress="255"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.734"
+
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
