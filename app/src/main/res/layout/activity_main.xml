@@ -11,8 +11,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="RGB"
-        tools:layout_editor_absoluteX="249dp"
-        tools:layout_editor_absoluteY="543dp" />
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="662dp" />
 
     <Button
         android:id="@+id/onbutton"
@@ -37,4 +37,26 @@
         android:text="UV"
         tools:layout_editor_absoluteX="63dp"
         tools:layout_editor_absoluteY="544dp" />
+
+    <SeekBar
+        android:id="@+id/redbar"
+        android:layout_width="145dp"
+        android:layout_height="60dp"
+        tools:layout_editor_absoluteX="220dp"
+        tools:layout_editor_absoluteY="505dp" />
+
+    <SeekBar
+        android:id="@+id/bluebar"
+        android:layout_width="145dp"
+        android:layout_height="60dp"
+        tools:layout_editor_absoluteX="220dp"
+        tools:layout_editor_absoluteY="530dp" />
+
+    <SeekBar
+        android:id="@+id/greenbar"
+        android:layout_width="145dp"
+        android:layout_height="60dp"
+        tools:layout_editor_absoluteX="220dp"
+        tools:layout_editor_absoluteY="555dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
