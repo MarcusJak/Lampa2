@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Lampa2</string>
+    <string name="pa">På</string>
+    <string name="av">AV</string>
+    <string name="uv">UV</string>
+    <string name="todo">TODO</string>
 </resources>
