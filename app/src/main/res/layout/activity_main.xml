@@ -54,4 +54,12 @@
         app:layout_constraintVertical_bias="0.159"
         app:srcCompat="@drawable/lampaav" />
 
+    <Button
+        android:id="@+id/btnsettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inställningar"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
