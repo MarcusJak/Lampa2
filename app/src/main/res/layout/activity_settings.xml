@@ -7,15 +7,6 @@
     tools:context=".settings">
 
     <Button
-        android:id="@+id/btnhome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hem"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
         android:id="@+id/btnnightmode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,8 +14,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnhome"
-        app:layout_constraintVertical_bias="0.07" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
 
     <Button
         android:id="@+id/btnlanguage"
@@ -66,12 +57,12 @@
         android:id="@+id/btnswichlamp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="328dp"
+        android:layout_marginBottom="224dp"
         android:text="Byt lampa"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5"
-        app:layout_constraintVertical_bias="0.052" />
+        app:layout_constraintTop_toBottomOf="@+id/btnwifi"
+        app:layout_constraintVertical_bias="0.152" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         //sätt på UV
         val btnsettings = findViewById<Button>(R.id.btnsettings)
 
-        uvbutton.setOnClickListener {
+        btnsettings.setOnClickListener {
             val intent = Intent(this,  settings::class.java)
             startActivity(intent)
         }
