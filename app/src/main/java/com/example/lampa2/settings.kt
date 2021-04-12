@@ -15,10 +15,10 @@ class settings : AppCompatActivity() {
         btnnightmode.setOnClickListener {
         }
 
-        val btnsettings = findViewById<Button>(R.id.btnsettings)
+        val btnpresets = findViewById<Button>(R.id.btnpresets)
 
-        btnsettings.setOnClickListener {
-            val intent = Intent(this,  settings::class.java)
+        btnpresets.setOnClickListener {
+            val intent = Intent(this,  presets::class.java)
             startActivity(intent)
         }
 

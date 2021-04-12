@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Lampa2">
-        <activity android:name=".uvljus"></activity>
+        <activity android:name=".presets"></activity>
+        <activity android:name=".uvljus" />
         <activity android:name=".lampaon" />
         <activity
             android:name=".RGB"
