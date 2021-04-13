@@ -1,90 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
     tools:context=".RGB">
 
 
+    <View
+        android:id="@+id/rgbView"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/rgbHexValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp" />
+
+    <TextView
+        android:id="@+id/rgbValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="RGB(0, 0, 0)"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
 
     <SeekBar
         android:id="@+id/redBar"
-        android:layout_width="145dp"
-        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:max="255"
-        android:min="0"
-        android:progress="100"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.74"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.676" />
-
-    <SeekBar
-        android:id="@+id/blueBar"
-        android:layout_width="145dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="556dp"
-        android:max="255"
-        android:min="0"
-        android:progress="4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.74"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        android:progressTint="#FF0000"
+        android:thumbTint="#FF0000"
+        android:layout_marginTop="16dp"/>
 
     <SeekBar
         android:id="@+id/greenBar"
-        android:layout_width="145dp"
-        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:max="255"
-        android:min="0"
-        android:progress="255"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.74"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.751" />
+        android:progressTint="#00FF00"
+        android:thumbTint="#00FF00"
+        android:layout_marginTop="16dp"/>
 
-    <TextView
-        android:id="@+id/redNumber"
+    <SeekBar
+        android:id="@+id/blueBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="255"
+        android:progressTint="#0000FF"
+        android:thumbTint="#0000FF"
+        android:layout_marginTop="16dp"/>
+
+
+    <Button
+        android:id="@+id/rgbOn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="100"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toRightOf="@+id/redBar"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.657" />
+        android:text="Välj denna färg"
+        android:layout_marginTop="40dp"/>
 
-    <TextView
-        android:id="@+id/greenNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toRightOf="@id/greenBar"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.701" />
-
-    <TextView
-        android:id="@+id/blueNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="255"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toRightOf="@id/blueBar"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.735" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

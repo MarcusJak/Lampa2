@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="RGB"
+        app:backgroundTint="#673AB7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -23,6 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="På"
+        app:backgroundTint="#673AB7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.195"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -35,6 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="UV"
+        app:backgroundTint="#673AB7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.786"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -59,7 +62,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Inställningar"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:visibility="visible"
+        app:backgroundTint="#673AB7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        tools:visibility="visible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

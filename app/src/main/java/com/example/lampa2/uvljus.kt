@@ -46,5 +46,29 @@ class uvljus : AppCompatActivity() {
             }
 
         })
+
+
+        val rgbButton = findViewById<Button>(R.id.rgbButton)
+        rgbButton.setOnClickListener {
+            val intent = Intent(this,  RGB::class.java)
+            startActivity(intent)
+        }
+
+        //sätt på lysset
+        val onbutton = findViewById<Button>(R.id.onbutton)
+
+        onbutton.setOnClickListener {
+            val intent = Intent(this,  lampaon::class.java)
+            startActivity(intent)
+        }
+
+        val btnsettings = findViewById<Button>(R.id.btnsettings)
+
+        btnsettings.setOnClickListener {
+            val intent = Intent(this,  settings::class.java)
+            startActivity(intent)
+        }
+
+
     }
 }
