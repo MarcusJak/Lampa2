@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.lampa2">
+
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
@@ -10,8 +11,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Lampa2">
-        <activity android:name=".presets"></activity>
+        android:theme="@style/Theme.Lampa2"
+        android:fullBackupContent="@xml/backup_descriptor">
+        <activity android:name=".presets" />
         <activity android:name=".uvljus" />
         <activity android:name=".lampaon" />
         <activity
