@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         onbutton.setOnClickListener {
             val intent = Intent(this,  lampaon::class.java)
+            writeData("1\n")
             startActivity(intent)
         }
 

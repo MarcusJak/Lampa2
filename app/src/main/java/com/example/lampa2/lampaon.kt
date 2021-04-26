@@ -23,6 +23,7 @@ class lampaon : AppCompatActivity() {
         buttonOff.setOnClickListener {
             val intent = Intent(this,  MainActivity::class.java)
             startActivity(intent)
+            writeData("2\n")
         }
 
         val styrka = findViewById<SeekBar>(R.id.styrka)
