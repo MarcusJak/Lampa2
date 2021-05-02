@@ -12,6 +12,14 @@ class settings : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
 
+        //sätt på UV
+        val btnpreset = findViewById<Button>(R.id.btnpreset)
+
+        btnpreset.setOnClickListener {
+            val intent = Intent(this,  presets::class.java)
+            startActivity(intent)
+        }
+
         // Declare the switch from the layout file
         val btn = findViewById<Switch>(R.id.switch1)
 
@@ -31,3 +39,4 @@ class settings : AppCompatActivity() {
         }
     }
 }
+
