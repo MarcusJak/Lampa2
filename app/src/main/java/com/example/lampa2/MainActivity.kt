@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         uvbutton.setOnClickListener {
             val intent = Intent(this,  uvljus::class.java)
             startActivity(intent)
+            writeData("3\n")
         }
 
         //sätt på UV

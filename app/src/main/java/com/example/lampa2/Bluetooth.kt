@@ -10,7 +10,7 @@ val mBluetoothAdapter: BluetoothAdapter? = BluetoothAdapter.getDefaultAdapter()
 lateinit var btSocket : BluetoothSocket
 const val myUUID = "00001101-0000-1000-8000-00805F9B34FB"
 fun connectBluetoothDevice() {
-    val hC06 = mBluetoothAdapter?.getRemoteDevice("98:D3:32:71:17:DE") //Sätt in MAC-Adressen
+    val hC06 = mBluetoothAdapter?.getRemoteDevice("30:14:08:26:16:18") //Sätt in MAC-Adressen
     Log.d("", "Connecting to ... $hC06")
     mBluetoothAdapter?.cancelDiscovery()
     try {
