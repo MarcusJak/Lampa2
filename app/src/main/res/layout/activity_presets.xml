@@ -77,4 +77,22 @@
         android:inputType="text"
         app:layout_constraintStart_toStartOf="@+id/onhour"
         app:layout_constraintTop_toBottomOf="@+id/onhour" />
+
+    <Button
+        android:id="@+id/alarm1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lägg till alarm"
+        app:layout_constraintEnd_toEndOf="@+id/onmin"
+        app:layout_constraintStart_toStartOf="@+id/onmin"
+        app:layout_constraintTop_toBottomOf="@+id/onmin" />
+
+    <Button
+        android:id="@+id/Alarm2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lägg till alarm"
+        app:layout_constraintEnd_toEndOf="@+id/offmin"
+        app:layout_constraintStart_toStartOf="@+id/offmin"
+        app:layout_constraintTop_toBottomOf="@+id/offmin" />
 </androidx.constraintlayout.widget.ConstraintLayout>

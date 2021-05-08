@@ -53,6 +53,22 @@
             android:layout_marginBottom="-113dp"
             android:text="Förinställda ljuslägen" />
 
+        <Button
+            android:id="@+id/btnlng"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btnpreset"
+            android:layout_alignLeft="@+id/btnpreset"
+            android:layout_alignTop="@+id/btnpreset"
+            android:layout_alignEnd="@+id/btnpreset"
+            android:layout_alignRight="@+id/btnpreset"
+            android:layout_marginStart="42dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="115dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginRight="41dp"
+            android:text="Ändra Språk" />
+
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
