@@ -4,4 +4,17 @@
     <string name="av">AV</string>
     <string name="uv">UV</string>
     <string name="todo">TODO</string>
+    <string name="v_lj_denna_f_rg">Välj denna färg</string>
+    <string name="f_rinst_llda_ljusl_gen">Förinställda ljuslägen</string>
+    <string name="ndra_spr_k">Ändra Språk</string>
+    <string name="v_xla_till_nattl_ge">Växla till nattläge</string>
+    <string name="rgb">RGB</string>
+    <string name="led">Led</string>
+    <string name="inst_llningar">Inställningar</string>
+    <string name="lampan_kommer_att_s_ttas_p">Lampan kommer att sättas på</string>
+    <string name="lampan_kommer_att_st_ngas_av">Lampan kommer att stängas av</string>
+    <string name="timme">timme</string>
+    <string name="minut">minut</string>
+    <string name="l_gg_till_alarm">lägg till alarm</string>
+    <string name="l_gg_till_alarm_">Lägg till alarm</string>
 </resources>

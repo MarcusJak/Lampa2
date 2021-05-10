@@ -32,7 +32,7 @@
             android:layout_marginBottom="500dp"
             android:scaleX="2"
             android:scaleY="2"
-            android:text="Enable dark mode"
+            android:text="@string/v_xla_till_nattl_ge"
             tools:ignore="UseSwitchCompatOrMaterialXml" />
 
         <Button
@@ -51,7 +51,7 @@
             android:layout_marginEnd="63dp"
             android:layout_marginRight="63dp"
             android:layout_marginBottom="-113dp"
-            android:text="Förinställda ljuslägen" />
+            android:text="@string/f_rinst_llda_ljusl_gen" />
 
         <Button
             android:id="@+id/btnlng"
@@ -67,7 +67,7 @@
             android:layout_marginTop="115dp"
             android:layout_marginEnd="41dp"
             android:layout_marginRight="41dp"
-            android:text="Ändra Språk" />
+            android:text="@string/ndra_spr_k" />
 
     </RelativeLayout>
 
