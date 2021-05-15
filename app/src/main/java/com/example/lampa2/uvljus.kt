@@ -20,7 +20,6 @@ class uvljus : AppCompatActivity() {
         uvOff.setOnClickListener {
             val intent = Intent(this,  MainActivity::class.java)
             startActivity(intent)
-            writeData("4\n")
         }
         val styrka = findViewById<SeekBar>(R.id.styrka)
         val textView2 = findViewById<TextView>(R.id.textView2)
