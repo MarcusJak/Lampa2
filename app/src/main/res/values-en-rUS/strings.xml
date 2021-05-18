@@ -18,4 +18,5 @@
     <string name="minut">minute</string>
     <string name="l_gg_till_alarm">add alarm</string>
     <string name="l_gg_till_alarm_">add alarm</string>
+    <string name="refresh">Refresh</string>
 </resources>
