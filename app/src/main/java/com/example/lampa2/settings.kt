@@ -49,10 +49,10 @@ class settings : AppCompatActivity() {
             // else keep the switch text to enable dark mode
             if (btn.isChecked) {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-                btn.text = "Disable dark mode"
+                btn.text = getString(R.string.disabledarkmode)
             } else {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-                btn.text = "Enable dark mode"
+                btn.text = getString(R.string.enabledarkmode)
             }
         }
     }
