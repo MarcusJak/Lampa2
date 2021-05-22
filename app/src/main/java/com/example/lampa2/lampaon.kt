@@ -17,7 +17,6 @@ import java.util.*
 
 class lampaon : AppCompatActivity() {
     lateinit var mBluetoothAdapter: BluetoothAdapter
-    lateinit var btSocket : BluetoothSocket
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,82 +28,62 @@ class lampaon : AppCompatActivity() {
         val buttonOff = findViewById<Button>(R.id.buttonOff)
 
         buttonOff.setOnClickListener {
-            val intent = Intent(this,  MainActivity::class.java)
-
+            val intent = Intent(this, MainActivity::class.java)
+            intent.putExtra("MAC-Address", macstring)
+            writeData("2")
             startActivity(intent)
         }
 
         val styrka = findViewById<SeekBar>(R.id.styrka)
         val textView2 = findViewById<TextView>(R.id.textView2)
-        var startPoint=0
-        var endPoint=0
+        var startPoint = 0
+        var endPoint = 0
 
-        styrka.setOnSeekBarChangeListener(object :  SeekBar.OnSeekBarChangeListener {
+        styrka.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
-                textView2.text=progress.toString()
+                textView2.text = progress.toString()
             }
 
             override fun onStartTrackingTouch(seekBar: SeekBar?) {
                 if (seekBar != null) {
-                    startPoint=seekBar.progress
+                    startPoint = seekBar.progress
                 }
             }
 
             override fun onStopTrackingTouch(seekBar: SeekBar?) {
                 if (seekBar != null) {
-                    endPoint=seekBar.progress
+                    endPoint = seekBar.progress
                 }
-                Toast.makeText(this@lampaon,"ändring  ${endPoint-startPoint}%", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    this@lampaon,
+                    "ändring  ${endPoint - startPoint}%",
+                    Toast.LENGTH_SHORT
+                ).show()
 
             }
 
         })
         val rgbButton = findViewById<Button>(R.id.rgbButton)
         rgbButton.setOnClickListener {
-            val intent = Intent(this,  RGB::class.java)
+            val intent = Intent(this, RGB::class.java)
             startActivity(intent)
         }
-
 
 
         //sätt på UV
         val uvbutton = findViewById<Button>(R.id.uvbutton)
 
         uvbutton.setOnClickListener {
-            val intent = Intent(this,  uvljus::class.java)
+            val intent = Intent(this, uvljus::class.java)
             startActivity(intent)
         }
         val btnsettings = findViewById<Button>(R.id.btnsettings)
 
         btnsettings.setOnClickListener {
-            val intent = Intent(this,  settings::class.java)
+            val intent = Intent(this, settings::class.java)
             startActivity(intent)
         }
 
-    }
-    fun Connect() {
-
-        val device = mBluetoothAdapter.getRemoteDevice("30:14:08:26:16:18")
-        Log.d("", "Connecting to ... $device")
-        mBluetoothAdapter.cancelDiscovery()
-        try {
-            btSocket = device.createRfcommSocketToServiceRecord(UUID.fromString("00001101-0000-1000-8000-00805F9B34FB"))
-            /* Here is the part the connection is made, by asking the device to create a RfcommSocket (Unsecure socket I guess), It map a port for us or something like that */
-            btSocket.connect()
-        } catch (e: IOException) {
-            try {
-                btSocket.close()
-            } catch (e2: IOException) {
-                Log.d("", "Unable to end the connection")
-                Toast.makeText(applicationContext, "Unable to end the connection", Toast.LENGTH_SHORT).show()
-            }
-
-            Log.d("", "Socket creation failed")
-            Toast.makeText(applicationContext, "Socket creation failed", Toast.LENGTH_SHORT).show()
-        }
-
-        //beginListenForData()
-        /* this is a method used to read what the Arduino says for example when you write Serial.print("Hello world.") in your Arduino code */
     }
 
     private fun writeData(data: String) {
