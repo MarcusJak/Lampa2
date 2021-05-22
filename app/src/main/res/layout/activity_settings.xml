@@ -10,8 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity"
-        tools:layout_editor_absoluteX="69dp"
-        tools:layout_editor_absoluteY="26dp">
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <!--Create a switch-->
         <Switch
@@ -62,11 +62,13 @@
             android:layout_alignTop="@+id/btnpreset"
             android:layout_alignEnd="@+id/btnpreset"
             android:layout_alignRight="@+id/btnpreset"
+            android:layout_alignBottom="@+id/btnpreset"
             android:layout_marginStart="42dp"
             android:layout_marginLeft="42dp"
             android:layout_marginTop="115dp"
             android:layout_marginEnd="41dp"
             android:layout_marginRight="41dp"
+            android:layout_marginBottom="-115dp"
             android:text="@string/ndra_spr_k" />
 
     </RelativeLayout>

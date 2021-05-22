@@ -8,18 +8,6 @@
 
 
     <SeekBar
-        android:id="@+id/styrka1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="30dp"
-        android:layout_marginBottom="264dp"
-        android:max="100"
-        android:min="1"
-        android:progress="100"
-        app:layout_constraintBottom_toTopOf="@+id/ofhour"
-        tools:layout_editor_absoluteX="-15dp" />
-
-    <SeekBar
         android:id="@+id/styrka2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,19 +17,25 @@
         android:min="1"
         android:progress="100"
         app:layout_constraintBottom_toTopOf="@+id/onhour"
+        app:layout_constraintEnd_toEndOf="@+id/onhour"
+        app:layout_constraintStart_toStartOf="@+id/onhour"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintVertical_bias="0.4" />
 
     <EditText
         android:id="@+id/onhour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:ems="10"
         android:hint="@string/timme"
         android:inputType="text"
-        tools:layout_editor_absoluteX="107dp"
-        tools:layout_editor_absoluteY="129dp" />
+        app:layout_constraintBottom_toTopOf="@+id/offmin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/ofhour"
@@ -50,20 +44,12 @@
         android:ems="10"
         android:hint="@string/timme"
         android:inputType="text"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="395dp" />
-
-    <EditText
-        android:id="@+id/offmin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/minut"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="@+id/onhour"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/onhour"
-        app:layout_constraintTop_toBottomOf="@+id/onhour" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.569" />
 
     <EditText
         android:id="@+id/onmin"
@@ -72,16 +58,50 @@
         android:ems="10"
         android:hint="@string/minut"
         android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/alarm1"
+        app:layout_constraintEnd_toEndOf="@+id/ofhour"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ofhour"
         app:layout_constraintTop_toBottomOf="@+id/ofhour"
-        tools:layout_editor_absoluteX="100dp" />
+        app:layout_constraintVertical_bias="0.023" />
 
     <Button
         android:id="@+id/alarm1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
         android:text="@string/l_gg_till_alarm"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="580dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ofhour"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <SeekBar
+        android:id="@+id/styrka1"
+        android:layout_width="400dp"
+        android:layout_height="12dp"
+        android:layout_marginBottom="36dp"
+        android:max="100"
+        android:min="1"
+        android:progress="1"
+        app:layout_constraintBottom_toTopOf="@+id/ofhour"
+        app:layout_constraintEnd_toEndOf="@+id/ofhour"
+        app:layout_constraintStart_toStartOf="@+id/ofhour" />
+
+    <EditText
+        android:id="@+id/offmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/minut"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.206" />
 
     <Button
         android:id="@+id/Alarm2"
@@ -89,6 +109,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="@string/l_gg_till_alarm_"
+        app:layout_constraintBottom_toTopOf="@+id/styrka1"
+        app:layout_constraintEnd_toEndOf="@+id/offmin"
+        app:layout_constraintHorizontal_bias="0.341"
+        app:layout_constraintStart_toStartOf="@+id/offmin"
         app:layout_constraintTop_toBottomOf="@+id/offmin"
-        tools:layout_editor_absoluteX="121dp" />
+        app:layout_constraintVertical_bias="0.271" />
 </androidx.constraintlayout.widget.ConstraintLayout>
