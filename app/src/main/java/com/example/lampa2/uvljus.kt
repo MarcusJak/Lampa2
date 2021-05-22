@@ -19,6 +19,7 @@ class uvljus : AppCompatActivity() {
 
         uvOff.setOnClickListener {
             val intent = Intent(this,  MainActivity::class.java)
+            writeData("4")
             startActivity(intent)
         }
         val styrka = findViewById<SeekBar>(R.id.styrka)
@@ -72,3 +73,10 @@ class uvljus : AppCompatActivity() {
 
     }
 }
+
+private fun writeData(data: String) {
+    val outStream = btSocket.outputStream
+    val msgBuffer = data.toByteArray()
+    outStream.write(msgBuffer)
+}
+
